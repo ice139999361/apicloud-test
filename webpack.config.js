@@ -21,7 +21,8 @@ module.exports = {
 	},
 	plugins: [
     	new CopyWebpackPlugin([
-			{from: 'src/apicloud', to: __dirname+'/widget'}
+			{from: 'src/apicloud', to: __dirname+'/widget'},
+			{from: 'src/html', to: __dirname+'/widget/html'}
     	])
   	]
 
