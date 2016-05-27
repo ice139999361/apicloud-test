@@ -21,16 +21,21 @@ module.exports = {
 	},
 	plugins: [
     	new CopyWebpackPlugin([
-    		{from: 'src/config.xml', to: '../config.xml'},
-    		{from: 'src/index.html', to: '../index.html'},
-    		{from: 'src/html', to: '../html'},
-    		{from: 'src/icon', to: '../icon'},
-    		{from: 'src/launch', to: '../launch'}
+			{from: 'src/apicloud', to: __dirname+'/widget'}
     	])
   	]
 
 }
 
+
+/*
+{from: 'src/script/api.js'},
+    		{from: 'src/config.xml', to: '../config.xml'},
+    		{from: 'src/index.html', to: '../index.html'},
+    		{from: 'src/html', to: '../html'},
+    		{from: 'src/icon', to: '../icon'},
+    		{from: 'src/launch', to: '../launch'}
+*/
 
 
 

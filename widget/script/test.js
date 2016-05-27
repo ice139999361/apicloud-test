@@ -429,7 +429,7 @@
 		_createClass(A, [{
 			key: "sayHello",
 			value: function sayHello(name) {
-				alert("hello " + name + ".");
+				console.log("hello " + name + ".");
 			}
 		}]);
 
