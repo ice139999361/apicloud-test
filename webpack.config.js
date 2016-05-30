@@ -29,15 +29,5 @@ module.exports = {
 }
 
 
-/*
-{from: 'src/script/api.js'},
-    		{from: 'src/config.xml', to: '../config.xml'},
-    		{from: 'src/index.html', to: '../index.html'},
-    		{from: 'src/html', to: '../html'},
-    		{from: 'src/icon', to: '../icon'},
-    		{from: 'src/launch', to: '../launch'}
-*/
-
-
 
 

@@ -2,40 +2,32 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,initial-scale=1.0,width=device-width"/>
-    <title>APP</title>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>Hello APP</title>
     <link rel="stylesheet" type="text/css" href="../css/api.css" />
-    <link rel="stylesheet" type="text/css" href="../css/common.css" />
 	<style>
 		#con{
-			margin:10px;
-			font-size: 28px; 
+			margin: 10px;
+			font-size: 24px; 
 		}
 		ul{
-			display:-webkit-box;
-			-webkit-box-orient: vertical;
-			margin-bottom:10px;
+			margin-bottom: 10px;
 		}
-		.txt{ 
-			margin:5px 10px;
-			padding:5px;
-			/**background-color:#3B424C;**/
-			color:#000;
+		ul li{ 
+			margin: 5px 10px;
+			padding: 5px;
+			color: #000;
 			word-wrap: break-word;
 		}
 	</style>
 </head>
 <body>
-    <div >
-        <div > 
-            <label id="con">Hello APP</label><br><br>
-			<div id='sys-info'></div>
-        </div>
-    </div>
+    <label id="con">Hello APP</label>
+	<div id='sys-info'></div>
 </body>
 <script type="text/javascript" src="../script/api.js"></script>
 <script type="text/javascript">
-
     apiready = function(){
 		var ver = api.version;
 		var sType = api.systemType;
@@ -47,28 +39,29 @@
 		var winName = api.winName;
 		var winWidth = api.winWidth;
 		var winHeight = api.winHeight;
-		var frameName = api.frameName||'';
-		var frameWidth = api.frameWidth||'';
-		var frameHeight = api.frameHeight||'';
+		var frameName = api.frameName || '';
+		var frameWidth = api.frameWidth || '';
+		var frameHeight = api.frameHeight || '';
 
 		var str = '<ul>';
-		str += '<li><div class="txt">引擎版本信息: ' + ver + '</div></li>';
-		str += '<li><div class="txt">系统类型: ' + sType + '</div></li>';
-		str += '<li><div class="txt">系统版本: ' + sVer + '</div></li>';
-		str += '<li><div class="txt">设备标识: ' + id + '</div></li>';
-		str += '<li><div class="txt">设备型号: ' + model + '</div></li>';
-		str += '<li><div class="txt">设备名称: ' + name + '</div></li>';
-		str += '<li><div class="txt">网络状态: ' + cType + '</div></li>';
-		str += '<li><div class="txt">主窗口名字: ' + winName + '</div></li>';
-		str += '<li><div class="txt">主窗口宽度: ' + winWidth + '</div></li>';
-		str += '<li><div class="txt">主窗口高度: ' + winHeight + '</div></li>';
-		str += '<li><div class="txt">子窗口名字: ' + frameName + '</div></li>';
-		str += '<li><div class="txt">子窗口宽度: ' + frameWidth + '</div></li>';
-		str += '<li><div class="txt">子窗口高度: ' + frameHeight + '</div></li>';
+		str += '<li>引擎版本信息1: ' + ver + '</li>';
+		str += '<li>系统类型: ' + sType + '</li>';
+		str += '<li>系统版本: ' + sVer + '</li>';
+		str += '<li>设备标识: ' + id + '</li>';
+		str += '<li>设备型号: ' + model + '</li>';
+		str += '<li>设备名称: ' + name + '</li>';
+		str += '<li>网络状态: ' + cType + '</li>';
+		str += '<li>主窗口名字: ' + winName + '</li>';
+		str += '<li>主窗口宽度: ' + winWidth + '</li>';
+		str += '<li>主窗口高度: ' + winHeight + '</li>';
+		str += '<li>子窗口名字: ' + frameName + '</li>';
+		str += '<li>子窗口宽度: ' + frameWidth + '</li>';
+		str += '<li>子窗口高度: ' + frameHeight + '</li>';
 		str += '</ul>';
 
 		$api.byId('sys-info').innerHTML = str;
 
     };
 </script>
+<script type="text/javascript" src="../script/test.js"></script>
 </html>
